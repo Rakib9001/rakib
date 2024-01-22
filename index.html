@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="rakib.css">
+</head>
+<body>
+    <header>
+        <h1 class="Logo">RAKIB ...</h1>
+        <!-- <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Me</a>
+        </nav> -->
+        <nav>
+             
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+     
+        <script>
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+    
+            function toggleMenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "300px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+            
+        </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+         
+          <!-- nav end==================================== -->
+          <!-- navend===================================== -->
+    </header>
+    <div class="text-box">
+        <h1 class="rakib1"></h1>
+        <h1>
+            <span class="skills"></span>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aut voluptates, distinctio nemo recusandae nobis doloremque vitae molestias maxime cum odio reprehenderit odit, aspernatur consequatur exercitationem? Facilis optio magni ea.</p>
+        <div class="icon-box">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-linkedin' ></i>
+            <i class='bx bxl-twitter' ></i>
+        </div>
+        <button class="downloadBtn">Download cv</button>
+        <button class="contactBtn">Contact me</button>
+    </div>
+    <!-- <div class="img-box">
+        <img src="image.png" draggable="false" alt="">
+    </div> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
